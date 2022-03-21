@@ -3,7 +3,9 @@ import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
 
-function Home({projectsRef}) {
+function Home(props) {
+  const {projectsRef, aboutRef, contactRef} =props;
+
   return (
     <Fragment>
       <div className="hero-section">
@@ -21,9 +23,9 @@ function Home({projectsRef}) {
       </div>
       <div className="projects-about">
       <Projects projectsRef={projectsRef}/>
-      <About />
+      <About aboutRef={aboutRef}/>
       </div>
-      <Contact />
+      <Contact contactRef={contactRef}/>
     </Fragment>
   );
 }

@@ -1,36 +1,24 @@
 import React from "react";
-import Card1 from "./ProjectCard";
 
-import projectImg1 from "../assets/project_1.png";
-import projectImg2 from "../assets/project_2.png";
-import projectImg3 from "../assets/project_3.png";
-import projectImg4 from "../assets/project_4.png";
-
+import { getAllProjects }from "../services/projectData";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import ProjectCard from "./ProjectCard";
+import ProjectGalleryCard from "./ProjectGalleryCard";
 
 function ProjectGallery() {
   function renderThumbs(){
-    return [createImg(projectImg1), createImg(projectImg2), createImg(projectImg3), createImg(projectImg4)]
+    const images =getAllProjects().map((item)=>createImg(item.img))
+    return images
   }
   function createImg(img){
     return <img src={img} alt="thumb"/>
   }
   return (
     <Carousel renderThumbs={renderThumbs}>
-      <div>
-       <ProjectCard projectImg={projectImg1}/>
-      </div>
-      <div>
-      <ProjectCard projectImg={projectImg2}/>
-      </div>
-      <div>
-      <ProjectCard projectImg={projectImg3}/>
-      </div>
-      <div>
-      <ProjectCard projectImg={projectImg4}/>
-      </div>
+      {getAllProjects().map((item)=><div>
+       <ProjectGalleryCard project={item}/>
+      </div>)
+      }
     </Carousel>
   );
 }

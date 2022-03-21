@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
-function Header({ projectsRef }) {
+function Header({ projectsRef, aboutRef, contactRef }) {
   const location = useLocation().pathname;
   function scroll(ref) {
     window.scrollTo(0, ref.current.offsetTop);
@@ -21,42 +21,35 @@ function Header({ projectsRef }) {
           <div className="nav col-6 d-flex justify-content-center">
             <ul>
               <li>
-                <a className={location === "/" && "active"} href="/">
+                <Link to="#" className={location === "/" && "active"} href="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <Link
-                  className={location === "/projects" && "active"}
-                  to="#"
-                  onClick={() => scroll(projectsRef)}
-                >
+                <Link to="#" className={location === "/projects" && "active"} onClick={() => scroll(projectsRef)}>
                   Projects
                 </Link>
               </li>
               <li>
-                <a className={location === "/about" && "active"} href="/about">
+                <Link to="#" className={location === "/about" && "active"} href="/about" onClick={() => scroll(aboutRef)}>
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  className={location === "/contact" && "active"}
-                  href="/contact"
-                >
+                <Link to="#" className={location === "/contact" && "active"} href="/contact" onClick={() => scroll(contactRef)}>
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="nav-link-icon col-3 text-end">
-            <a href="#" className="contact-link">
+            <Link to="#" className="contact-link">
               <FaLinkedin className="me-5 " />
-            </a>
-            <a href="#" className="contact-link">
+            </Link>
+            <Link to="#" className="contact-link">
               <FaGithub />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

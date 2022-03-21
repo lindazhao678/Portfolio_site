@@ -1,9 +1,9 @@
 import React from "react";
 import logo from "../assets/logo.png";
 
-function About() {
+function About({aboutRef}) {
   return (
-    <div className="about-section text-light ">
+    <div className="about-section text-light" ref={aboutRef}>
       <h1 className="vertical-h1">ABOUT</h1>
       <div className="container">
 

@@ -6,25 +6,21 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Project from './pages/Project';
+import ProjectDetail from './components/ProjectDetail';
 
 import PageNotFound from "./pages/PageNotFound";
 
 
 function App() {
   const projectsRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
   return (
     <Router>
-      <Header projectsRef={projectsRef}/>
+      <Header projectsRef={projectsRef} aboutRef={aboutRef} contactRef={contactRef} />
       <Routes>
-        <Route exact path="/" element={<Home projectsRef={projectsRef}/>}></Route>
-        <Route path="/projects" element={<Projects />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/project" element={<Project />}></Route>
+        <Route exact path="/" element={<Home projectsRef={projectsRef} aboutRef={aboutRef} contactRef={contactRef}/>}></Route>
+        <Route path="/projectdetail" element={<ProjectDetail />}></Route>
         <Route path="/pagenotfound" element={<PageNotFound />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
