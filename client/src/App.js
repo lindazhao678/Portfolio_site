@@ -12,14 +12,18 @@ import PageNotFound from "./pages/PageNotFound";
 
 
 function App() {
-  const projectsRef = useRef(null);
-  const aboutRef = useRef(null);
-  const contactRef = useRef(null);
+ 
+ 
   return (
     <Router>
-      <Header projectsRef={projectsRef} aboutRef={aboutRef} contactRef={contactRef} />
+      <Header />
       <Routes>
-        <Route exact path="/" element={<Home projectsRef={projectsRef} aboutRef={aboutRef} contactRef={contactRef}/>}></Route>
+        <Route exact path="/" element={<Home />}></Route>
+
+        <Route exact path="/projects" element={<Home />}></Route>
+        <Route exact path="/about" element={<Home />}></Route>
+        <Route exact path="/contact" element={<Home />}></Route>
+
         <Route path="/projectdetail" element={<ProjectDetail />}></Route>
         <Route path="/pagenotfound" element={<PageNotFound />} />
         <Route path="*" element={<PageNotFound />} />

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -8,13 +8,24 @@ function ProjectDetail() {
 
   const { state: project } = useLocation();
   const navigate = useNavigate();
-
   const id = project.id;
+  const [prevDisabled, setPrevDisabled] =useState (false);
+  const [nextDisabled, setNextDisabled] =useState (false);
+  
+  useEffect(()=>{
+    if(id===1){
+      setPrevDisabled(true)
+    }else
+    setPrevDisabled(false)
+    if(id===4){
+      setNextDisabled(true)
+    }else
+    setNextDisabled(false)
+  },[id]);
 
   function handlePrev(){ 
     if (id>1){ 
       const newProject = projectData(id-1)
-      console.log(newProject)
       navigate('/projectdetail', {state: newProject});
     }
   }
@@ -22,13 +33,12 @@ function ProjectDetail() {
   function handleNext(){
     if(id<4){
       const newProject = projectData(id+1)
-      console.log(newProject)
       navigate('/projectdetail', {state: newProject});
     }
   }
 
   function viewDemo(){
-
+    window.location='https://www.google.com';
   }
 
   function viewSource(){
@@ -58,8 +68,9 @@ function ProjectDetail() {
       </div>
 
       <div className="nav-project row justify-content-between">
-        <button className="nav-button col-2" onClick={handlePrev} disabled={id<2}>Prev Project</button>
-        <button className="nav-button col-2" onClick={handleNext}>Next Project</button>
+        <button className="nav-button col-2" onClick={handlePrev} disabled={prevDisabled}>Prev Project</button>
+        <button className="nav-button col-2" onClick={handleNext}
+        disabled={nextDisabled}>Next Project</button>
       </div>
 
     </div>

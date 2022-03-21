@@ -4,11 +4,8 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
-function Header({ projectsRef, aboutRef, contactRef }) {
+function Header() {
   const location = useLocation().pathname;
-  function scroll(ref) {
-    window.scrollTo(0, ref.current.offsetTop);
-  }
   return (
       <div className="navbar">
         <div className="row container mx-auto">
@@ -21,22 +18,22 @@ function Header({ projectsRef, aboutRef, contactRef }) {
           <div className="nav col-6 d-flex justify-content-center">
             <ul>
               <li>
-                <Link to="#" className={location === "/" && "active"} href="/">
+                <Link to="/" className={location === "/" && "active"} >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="#" className={location === "/projects" && "active"} onClick={() => scroll(projectsRef)}>
+                <Link to="/projects" className={location === "/projects" && "active"}>
                   Projects
                 </Link>
               </li>
               <li>
-                <Link to="#" className={location === "/about" && "active"} href="/about" onClick={() => scroll(aboutRef)}>
+                <Link to="/about" className={location === "/about" && "active"}>
                   About
                 </Link>
               </li>
               <li>
-                <Link to="#" className={location === "/contact" && "active"} href="/contact" onClick={() => scroll(contactRef)}>
+                <Link to="/contact" className={location === "/contact" && "active"}>
                   Contact
                 </Link>
               </li>
@@ -45,7 +42,7 @@ function Header({ projectsRef, aboutRef, contactRef }) {
 
           <div className="nav-link-icon col-3 text-end">
             <Link to="#" className="contact-link">
-              <FaLinkedin className="me-5 " />
+              <FaLinkedin className="me-5" />
             </Link>
             <Link to="#" className="contact-link">
               <FaGithub />
