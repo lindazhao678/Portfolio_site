@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 function About({aboutRef}) {
   return (
     <div className="about-section text-light" ref={aboutRef}>
-      <h1 className="vertical-h1">ABOUT</h1>
+      <h1 className="about-title">ABOUT</h1>
       <div className="container">
 
         <div className="d-flex pt-5 justify-content-center">

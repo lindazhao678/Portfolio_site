@@ -6,8 +6,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 import Home from "./pages/Home";
-import ProjectDetail from './components/ProjectDetail';
 
+import ProjectDetail from './pages/ProjectDetail';
 import PageNotFound from "./pages/PageNotFound";
 
 

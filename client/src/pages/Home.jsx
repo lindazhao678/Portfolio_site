@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
-import Projects from "./Projects";
-import About from "./About";
-import Contact from "./Contact";
+import Projects from "../containers/Projects";
+import About from "../containers/About";
+import Contact from "../containers/Contact";
 
 function Home(props) {
   const {projectsRef, aboutRef, contactRef} =props;
