@@ -18,16 +18,14 @@ function About({aboutRef}) {
               commodo non ad id. Et veniam excepteur non officia fugiat aliqua
               sint culpa tempor adipisicing Lorem ullamco excepteur. Voluptate
               nulla in sunt consectetur magna nulla quis amet Lorem amet officia
-              anim.Incididunt tempor.Reprehenderit et pariatur nulla labore
-              irure nisi officia officia ea exercitation dolore. Anim pariatur
-              incididunt et cillum ad et culpa enim.
+              anim.Incididunt tempor.
             </p>
           </div>
         </div>
 
         <div className="about-skills">
-          <h1 className="text-center pt-5">MY SKILLS</h1>
-          <div className="skill-card row row-cols-3 text-center pb-5">
+          <h1 className="text-center pt-5 container">MY SKILLS</h1>
+          <div className="skill-card row text-center pb-5">
             <div className="col p-3">
               <div className="badge rounded-pill">HTML</div>
             </div>

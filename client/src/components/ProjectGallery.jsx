@@ -14,7 +14,7 @@ function ProjectGallery() {
     return <img src={img} alt="thumb"/>
   }
   return (
-    <Carousel renderThumbs={renderThumbs}>
+    <Carousel renderThumbs={renderThumbs} autoPlay={true} interval={2000} infiniteLoop={true}>
       {getAllProjects().map((item)=><div>
        <ProjectGalleryCard project={item}/>
       </div>)
