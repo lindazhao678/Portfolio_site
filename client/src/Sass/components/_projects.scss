@@ -1,0 +1,22 @@
+@use '../abstracts' as *;
+
+.projects-about {
+    background: url("../assets/bg_img.jpeg");
+    background-size: contain;
+  }
+  
+  .project-section .project-title {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    float: left;
+    padding-top: 2em;
+  }
+  .project-carousel {
+    width: 50%;
+    margin: auto;
+    padding-top: 6em;
+  }
+  .project-carousel .carousel .thumbs {
+    padding-left: 0;
+    text-align: center;
+  }

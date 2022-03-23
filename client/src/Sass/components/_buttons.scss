@@ -1,0 +1,82 @@
+@use "../abstracts" as *;
+
+.button {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  background-color: #be375f;
+  font-size: 16px;
+  border: 4px, solid, black;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+
+  &:hover {
+    color: #be375f;
+    background-color: #f5eb6d;
+  }
+}
+
+.demo-button {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background-color: #be375f;
+  font-size: 16px;
+  border: 4px, solid, black;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+
+&:hover {
+  color: #be375f;
+  background-color: #f5eb6d;
+}
+}
+
+.nav-button {
+  background-color: white;
+  font-size: 24px;
+  border: none;
+  padding: 2px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  margin: 60px auto;
+
+  :hover {
+    color: #be375f;
+    background-color: #f5eb6d;
+  }
+
+  :disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    pointer-events: none;
+  }
+}
+
+.go-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  background-color: #be375f;
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+
+  &:hover {
+    color: #be375f;
+    background-color: #f5eb6d;
+  }
+}
+

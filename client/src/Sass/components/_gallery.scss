@@ -1,0 +1,16 @@
+@use '../abstracts' as *;
+
+.carousel .slide .project-gallery-card img {
+    border: 4px solid #f5eb6d;
+  }
+  
+  .project-gallery-card {
+    position: relative;
+  }
+  
+  
+  
+  .project-detail{
+    padding-top: 60px;
+    background:#be375f
+  }

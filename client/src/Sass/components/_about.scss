@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+.about-section{
+ .about-title {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    float: left;
+    padding-top: 6em;
+  }
+  
+  .about-content-box {
+    width: 50%;
+    border: 5px solid black;
+    background: #be375f;
+  }
+  
+  .badge {
+    background: #be375f;
+    font-size: 1.6em;
+    font-weight: 300;
+  }
+} 
+  

@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+.project-detail-card {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    border: 3px solid #f5eb6d;
+  }
+  
+  .project-detail .project-detail-image{ 
+    width: 100%;
+  }
+
+  .project-detail .detail-content{
+    padding-bottom: 60px;
+  }
+  
