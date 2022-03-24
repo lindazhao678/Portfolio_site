@@ -1,17 +1,21 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
-.project-detail-card {
+.project-detail {
+  padding-top: 60px;
+  background: $primary-color;
+
+  .detail-content {
+    padding-bottom: 60px;
+  }
+
+  .project-detail-card {
     position: relative;
     width: 50%;
     margin: auto;
-    border: 3px solid #f5eb6d;
-  }
-  
-  .project-detail .project-detail-image{ 
-    width: 100%;
-  }
+    border: 3px solid $button-hover-color;
 
-  .project-detail .detail-content{
-    padding-bottom: 60px;
+    .project-detail-image {
+      width: 100%;
+    }
   }
-  
+}

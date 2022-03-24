@@ -1,10 +1,10 @@
 @use "../abstracts" as *;
 
-.button {
+.more-button {
   position: absolute;
-  bottom: 0%;
-  right: 0%;
-  background-color: #be375f;
+  bottom: 8%;
+  right: 5%;
+  background-color: $primary-color;
   font-size: 16px;
   border: 4px, solid, black;
   padding: 10px 20px;
@@ -14,28 +14,23 @@
   color: white;
 
   &:hover {
-    color: #be375f;
-    background-color: #f5eb6d;
+    color: $primary-color;
+    background-color: $button-hover-color;
   }
 }
 
+.source-button {
+  @extend .more-button;
+  bottom: 0%;
+  right: 0%;
+  width: 50%;
+}
+
 .demo-button {
-  position: absolute;
+  @extend .more-button;
   bottom: 0%;
   left: 0%;
-  background-color: #be375f;
-  font-size: 16px;
-  border: 4px, solid, black;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-  color: white;
-
-&:hover {
-  color: #be375f;
-  background-color: #f5eb6d;
-}
+  width: 50%;
 }
 
 .nav-button {
@@ -49,12 +44,12 @@
   color: black;
   margin: 60px auto;
 
-  :hover {
-    color: #be375f;
-    background-color: #f5eb6d;
+  &:hover {
+    color: $primary-color;
+    background-color: $button-hover-color;
   }
 
-  :disabled {
+  &:disabled {
     border: 1px solid #999999;
     background-color: #cccccc;
     color: #666666;
@@ -68,15 +63,15 @@
   right: 30px;
   z-index: 99;
   font-size: 18px;
-  border: none;
-  background-color: #be375f;
+  border: 3px solid $button-hover-color;;
+  background-color: $primary-color;
   color: white;
   padding: 15px;
   border-radius: 4px;
 
   &:hover {
-    color: #be375f;
-    background-color: #f5eb6d;
+    color: $primary-color;
+    background-color: $button-hover-color;
   }
 }
 

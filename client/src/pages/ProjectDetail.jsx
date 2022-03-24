@@ -50,7 +50,7 @@ function ProjectDetail() {
       <div className="project-detail-card">
         <img className="project-detail-image" src={project.img} alt="project" />
          <button className="demo-button" onClick={viewDemo}>View Demo {'>>'}</button>
-         <button className=" button" onClick={viewSource}>Source Code</button>
+         <button className="source-button" onClick={viewSource}>Source Code {'>>'}</button>
       </div>
 
       <div className="detail-content mt-5 text-light">

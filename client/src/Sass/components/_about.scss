@@ -5,17 +5,17 @@
     writing-mode: vertical-rl;
     text-orientation: upright;
     float: left;
-    padding-top: 6em;
+    padding-top: 4em;
   }
   
   .about-content-box {
     width: 50%;
-    border: 5px solid black;
-    background: #be375f;
+    border: 3px solid $button-hover-color;
+    background: $primary-color;
   }
   
   .badge {
-    background: #be375f;
+    background: $primary-color;
     font-size: 1.6em;
     font-weight: 300;
   }

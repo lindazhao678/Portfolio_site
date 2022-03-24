@@ -11,7 +11,7 @@ function Header() {
         <div className="row container mx-auto">
           <div className="col-3">
             <a className={location === "/" && "active"} href="/">
-              <img className="logo" src={logo} alt="logo" />
+              <img className="nav-logo" src={logo} alt="logo" />
             </a>
           </div>
 
@@ -40,7 +40,7 @@ function Header() {
             </ul>
           </div>
 
-          <div className="nav-link-icon col-3 text-end">
+          <div className="nav-link col-3 text-end">
             <Link to="#" className="contact-link">
               <FaLinkedin className="me-5" />
             </Link>

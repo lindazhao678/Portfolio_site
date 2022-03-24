@@ -12,7 +12,7 @@ function ProjectGalleryCard( {project} ) {
     <div className="project-gallery-card">
       <img src={project.img} alt="project" />
       <button>
-        <button className="button text-bold" onClick={handleMore}>Explore More {'>>'}</button>
+        <button className="more-button text-bold" onClick={handleMore}>Explore More {'>>'}</button>
       </button>
     </div>
   );

@@ -1,19 +1,18 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .hero-section {
-    background: url("../assets/hero_img.jpeg") center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-  }
-  
-  .hero-section .hero-content {
+  background: url("../assets/hero_img.jpeg") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  .hero-content {
     padding: 160px;
+
+    ul {
+      list-style: none;
+      font-weight: 700;
+      color: white;
+    }
   }
-  
-  .hero-section .hero-content ul {
-    list-style: none;
-    font-weight: 700;
-    color: white;
-  }
-  
+}

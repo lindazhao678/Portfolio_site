@@ -1,18 +1,14 @@
-@use '../abstracts' as *;
-
+@use "../abstracts" as *;
 
 .contact-section {
-    background-color: #be375f;
-  }
+  background-color: $primary-color;
 
-.contact-link {
+  .contact-link {
     color: black;
+    font-size: 150px;
+
+    :hover {
+      color: $button-hover-color;
+    }
   }
-  
-  .contact-link:hover {
-    color: #f5eb6d;
-  }
-  
-  .contact-link-icon {
-    font-size: 200px;
-  }
+}

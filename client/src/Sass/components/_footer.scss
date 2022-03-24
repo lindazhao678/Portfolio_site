@@ -1,14 +1,18 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .footer {
-    background-color: #ed8554;
-    height: 80px;
-    text-align: center;
-  }
-  
-  .footer img,
-  .footer span {
+  background-color: $background-color;
+  height: 80px;
+  text-align: center;
+
+  .footer-text {
     vertical-align: middle;
     margin: 10px;
     display: inline-block;
   }
+
+  .footer-logo {
+    @extend .footer-text;
+    height: 60px;
+  }
+}

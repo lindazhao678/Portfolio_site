@@ -1,22 +1,32 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .projects-about {
-    background: url("../assets/bg_img.jpeg");
-    background-size: contain;
-  }
-  
-  .project-section .project-title {
+  background: url("../assets/bg_img.jpeg");
+  background-size: contain;
+
+  .project-title {
     writing-mode: vertical-rl;
     text-orientation: upright;
     float: left;
     padding-top: 2em;
   }
+
   .project-carousel {
     width: 50%;
     margin: auto;
     padding-top: 6em;
+
+    .carousel .slide {
+      border: 3px solid #f5eb6d;
+
+      .project-gallery-card {
+        position: relative;
+      }
+    }
+
+    .thumbs {
+      padding-left: 0;
+      text-align: center;
+    }
   }
-  .project-carousel .carousel .thumbs {
-    padding-left: 0;
-    text-align: center;
-  }
+}
