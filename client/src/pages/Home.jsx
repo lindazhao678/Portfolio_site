@@ -44,16 +44,14 @@ function Home(props) {
     <Fragment>
       <div className="hero-section">
         <div className="container row">
-          <div className="hero-content">
-            <ul className="slogan h4">
-              <li className="text-warning">Hello!</li>
+          <div className="hero-content">      
+              <p className="text-warning h1">Hello!</p>
               <br />
-              <li>I'm Lijun Zhao,</li>
-              <li>a web developer </li>
-              <li>based in Melbourne.</li>
+              <p className="text-light h4">I'm Lijun Zhao,</p>
+              <p className="text-light h4">a web developer </p>
+              <p className="text-light h4">based in Melbourne.</p>
               <br />
-              <li>Welcome to my Website!</li>
-            </ul>
+              <p className="text-light h4">Welcome to my Website!</p>
           </div>
         </div>
       </div>

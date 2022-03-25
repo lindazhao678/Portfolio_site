@@ -4,38 +4,28 @@ import {
   Navbar
 } from "react-bootstrap";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 function Header() {
-  const location = useLocation().pathname;
   return (
-    <Navbar expand="lg" bg="navbar">
+    <Navbar className="top-nav" expand="md">
       <Container fluid>
         <Navbar.Brand href="/">
-          <img className="navbar-logo" src={logo} alt="logo" />
+          <img className="nav-logo" src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-            <Nav.Link href="/" className={location === "/" && "active"}>
-              Home
-            </Nav.Link>
-            <Nav.Link href="/projects" className={location === "/projects" && "active"}>
-              Projects
-            </Nav.Link>
-            <Nav.Link href="/about" className={location === "/about" && "active"}>
-              About
-            </Nav.Link>
-            <Nav.Link href="/contact" className={location === "/contact" && "active"}>
-              Contact
-            </Nav.Link>
+          <Nav className="" navbarScroll>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/projects">Projects</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
           <div className="d-flex">
-            <Navbar.Brand href="#" className="me-5">
+            <Navbar.Brand href="#" className="nav-contact me-5">
               <FaLinkedin />
             </Navbar.Brand>
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="#" className="nav-contact">
               <FaGithub />
             </Navbar.Brand>
           </div>

@@ -1,8 +1,26 @@
 @use "../abstracts" as *;
 
-.bg-navbar{
+.top-nav {
   background-color: $background-color;
-}
-.navbar-logo {
-  height: 60px;
+
+  .nav-logo {
+    height: 60px;
+  }
+
+  .navbar-nav {
+    margin: auto;
+
+    .nav-link {
+      color:black;
+      &:hover {
+        color: $button-hover-color;
+      }
+    }
+  }
+
+  .nav-contact{
+    &:hover {
+      color: $button-hover-color;
+    }
+  }
 }

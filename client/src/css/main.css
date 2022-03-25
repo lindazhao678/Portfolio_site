@@ -19,20 +19,31 @@ a {
       writing-mode: vertical-rl;
   -webkit-text-orientation: upright;
           text-orientation: upright;
-  padding-top: 2em;
+  text-align: center;
   color: white;
 }
 
-.bg-navbar {
-  background-color: #ED8554;
+.top-nav {
+  background-color: #ed8554;
 }
-
-.navbar-logo {
+.top-nav .nav-logo {
   height: 60px;
+}
+.top-nav .navbar-nav {
+  margin: auto;
+}
+.top-nav .navbar-nav .nav-link {
+  color: black;
+}
+.top-nav .navbar-nav .nav-link:hover {
+  color: #f5eb6d;
+}
+.top-nav .nav-contact:hover {
+  color: #f5eb6d;
 }
 
 .footer {
-  background-color: #ED8554;
+  background-color: #ed8554;
   height: 80px;
   text-align: center;
 }
@@ -49,7 +60,7 @@ a {
   position: absolute;
   bottom: 8%;
   right: 5%;
-  background-color: #BE375F;
+  background-color: #be375f;
   font-size: 16px;
   border: 4px, solid, black;
   padding: 10px 20px;
@@ -59,7 +70,7 @@ a {
   color: white;
 }
 .more-button:hover, .demo-button:hover, .source-button:hover {
-  color: #BE375F;
+  color: #be375f;
   background-color: #f5eb6d;
 }
 
@@ -87,7 +98,7 @@ a {
   margin: 60px auto;
 }
 .nav-button:hover {
-  color: #BE375F;
+  color: #be375f;
   background-color: #f5eb6d;
 }
 .nav-button:disabled {
@@ -104,18 +115,18 @@ a {
   z-index: 99;
   font-size: 18px;
   border: 3px solid #f5eb6d;
-  background-color: #BE375F;
+  background-color: #be375f;
   color: white;
   padding: 15px;
   border-radius: 4px;
 }
 .go-to-top-button:hover {
-  color: #BE375F;
+  color: #be375f;
   background-color: #f5eb6d;
 }
 
 .contact-section {
-  background-color: #BE375F;
+  background-color: #be375f;
 }
 .contact-section .contact-link {
   color: black;
@@ -132,7 +143,6 @@ a {
 .projects-about .project-carousel {
   width: 50%;
   margin: auto;
-  padding-top: 6em;
 }
 .projects-about .project-carousel .carousel .slide {
   border: 3px solid #f5eb6d;
@@ -146,13 +156,13 @@ a {
   text-align: center;
 }
 
-.about-section .about-content-box {
+.about-section .about-content {
   width: 50%;
-  border: 3px solid #f5eb6d;
-  background: #BE375F;
+  border: 2px solid #f5eb6d;
+  background: #be375f;
 }
 .about-section .badge {
-  background: #BE375F;
+  background: #be375f;
   font-size: 1.6em;
   font-weight: 300;
 }
@@ -164,23 +174,17 @@ a {
   width: 100%;
 }
 .hero-section .hero-content {
-  margin: 110px 0 0 0;
-}
-.hero-section .hero-content ul {
-  list-style: none;
-  color: white;
+  margin: 110px 0;
 }
 
-@media (max-width: 900px) {
-  .about-section .about-content-box {
+@media (max-width: 992px) {
+  .about-section .about-content {
     width: 90%;
-    border: 3px solid #f5eb6d;
-    background: #BE375F;
   }
 }
 .project-detail {
   padding-top: 60px;
-  background: #BE375F;
+  background: #be375f;
 }
 .project-detail .detail-content {
   padding-bottom: 60px;
