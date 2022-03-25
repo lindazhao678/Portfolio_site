@@ -4,13 +4,6 @@
   background: url("../assets/bg_img.jpeg");
   background-size: contain;
 
-  .project-title {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    float: left;
-    padding-top: 2em;
-  }
-
   .project-carousel {
     width: 50%;
     margin: auto;
@@ -21,6 +14,7 @@
 
       .project-gallery-card {
         position: relative;
+        cursor: pointer;
       }
     }
 

@@ -13,6 +13,7 @@ function ProjectDetail() {
   const [nextDisabled, setNextDisabled] =useState (false);
   
   useEffect(()=>{
+    window.scrollTo(0, 0);
     if(id===1){
       setPrevDisabled(true)
     }else

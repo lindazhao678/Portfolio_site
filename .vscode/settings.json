@@ -14,5 +14,5 @@
    "liveSassCompile.settings.autoprefix": [
        "defaults"
   ],
-  "editor.wordWrap": "on"
+"editor.wordWrap": "on"
   }

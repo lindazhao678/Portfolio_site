@@ -1,55 +1,47 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import {
+  Container, Nav,
+  Navbar
+} from "react-bootstrap";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
 
 function Header() {
   const location = useLocation().pathname;
   return (
-      <div className="navbar">
-        <div className="row container mx-auto">
-          <div className="col-3">
-            <a className={location === "/" && "active"} href="/">
-              <img className="nav-logo" src={logo} alt="logo" />
-            </a>
-          </div>
-
-          <div className="nav col-6 d-flex justify-content-center">
-            <ul>
-              <li>
-                <Link to="/" className={location === "/" && "active"} >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/projects" className={location === "/projects" && "active"}>
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className={location === "/about" && "active"}>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className={location === "/contact" && "active"}>
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="nav-link col-3 text-end">
-            <Link to="#" className="contact-link">
-              <FaLinkedin className="me-5" />
-            </Link>
-            <Link to="#" className="contact-link">
+    <Navbar expand="lg" bg="navbar">
+      <Container fluid>
+        <Navbar.Brand href="/">
+          <img className="navbar-logo" src={logo} alt="logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav className="me-auto my-2 my-lg-0" navbarScroll>
+            <Nav.Link href="/" className={location === "/" && "active"}>
+              Home
+            </Nav.Link>
+            <Nav.Link href="/projects" className={location === "/projects" && "active"}>
+              Projects
+            </Nav.Link>
+            <Nav.Link href="/about" className={location === "/about" && "active"}>
+              About
+            </Nav.Link>
+            <Nav.Link href="/contact" className={location === "/contact" && "active"}>
+              Contact
+            </Nav.Link>
+          </Nav>
+          <div className="d-flex">
+            <Navbar.Brand href="#" className="me-5">
+              <FaLinkedin />
+            </Navbar.Brand>
+            <Navbar.Brand href="#">
               <FaGithub />
-            </Link>
+            </Navbar.Brand>
           </div>
-        </div>
-      </div>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

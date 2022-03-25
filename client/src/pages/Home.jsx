@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useRef} from "react";
+import React, { Fragment, useEffect, useRef } from "react";
 import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
@@ -21,8 +21,11 @@ function Home(props) {
         scroll(contactRef.current.offsetTop);
       }
     }
-    window.addEventListener('scroll', function(){
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    window.addEventListener("scroll", function () {
+      if (
+        document.body.scrollTop > 100 ||
+        document.documentElement.scrollTop > 100
+      ) {
         goToTopBtnRef.current.style.display = "block";
       } else {
         goToTopBtnRef.current.style.display = "none";
@@ -30,26 +33,28 @@ function Home(props) {
     });
   }, [location]);
 
-  function scroll(top){
+  function scroll(top) {
     window.scrollTo({
       top: top,
       left: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   }
   return (
     <Fragment>
       <div className="hero-section">
-        <div className="hero-content">
-          <ul>
-            <li className="text-warning">Hello!</li>
-            <br />
-            <li>I'm Lijun Zhao,</li>
-            <li>a web developer </li>
-            <li>based in Melbourne.</li>
-            <br />
-            <li>Welcome to my Website!</li>
-          </ul>
+        <div className="container row">
+          <div className="hero-content">
+            <ul className="slogan h4">
+              <li className="text-warning">Hello!</li>
+              <br />
+              <li>I'm Lijun Zhao,</li>
+              <li>a web developer </li>
+              <li>based in Melbourne.</li>
+              <br />
+              <li>Welcome to my Website!</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="projects-about">
@@ -57,8 +62,12 @@ function Home(props) {
         <About aboutRef={aboutRef} />
       </div>
       <Contact contactRef={contactRef} />
-      <button onClick={()=>scroll(0)} ref={goToTopBtnRef} className="go-to-top-button">
-      <FaArrowUp />
+      <button
+        onClick={() => scroll(0)}
+        ref={goToTopBtnRef}
+        className="go-to-top-button"
+      >
+        <FaArrowUp />
       </button>
     </Fragment>
   );

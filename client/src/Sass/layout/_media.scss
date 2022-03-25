@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+@media (max-width: 900px) {
+  .about-section {
+    .about-content-box {
+      width: 90%;
+      border: 3px solid $button-hover-color;
+      background: $primary-color;
+    }
+  }
+}

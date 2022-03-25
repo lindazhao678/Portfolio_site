@@ -3,8 +3,8 @@ import logo from "../assets/logo.png";
 
 function About({aboutRef}) {
   return (
-    <div className="about-section text-light" ref={aboutRef}>
-      <h1 className="about-title">ABOUT</h1>
+    <div className="about-section clearfix " ref={aboutRef}>
+      <h1 className="title-v float-start">ABOUT</h1>
       <div className="container">
 
         <div className="d-flex pt-5 justify-content-center">
@@ -23,7 +23,7 @@ function About({aboutRef}) {
         </div>
 
         <div className="about-skills">
-          <h1 className="text-center pt-5">MY SKILLS</h1>
+          <h1 className="text-center pt-5 text-light">MY SKILLS</h1>
           <div className="skill-card row text-center pb-5 container">
             <div className="col p-3">
               <div className="badge rounded-pill">HTML</div>

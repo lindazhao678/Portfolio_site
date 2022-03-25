@@ -1,13 +1,7 @@
 @use '../abstracts' as *;
 
 .about-section{
- .about-title {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    float: left;
-    padding-top: 4em;
-  }
-  
+
   .about-content-box {
     width: 50%;
     border: 3px solid $button-hover-color;

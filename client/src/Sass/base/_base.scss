@@ -1,18 +1,24 @@
-@use '../abstracts' as *;
-
-
+@use "../abstracts" as *;
 
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    height: 100%;
-    font-family: $font-stack;
-    line-height: 1.5;
-  }
-  
-  a {
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-family: $font-stack;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title-v {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  padding-top: 2em;
+  color: white;
+}
+

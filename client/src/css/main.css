@@ -14,54 +14,21 @@ a {
   text-decoration: none;
 }
 
-.navbar {
+.title-v {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  -webkit-text-orientation: upright;
+          text-orientation: upright;
+  padding-top: 2em;
+  color: white;
+}
+
+.bg-navbar {
   background-color: #ED8554;
 }
-.navbar .row {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.navbar .row .nav-logo {
+
+.navbar-logo {
   height: 60px;
-}
-.navbar .row .nav-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.navbar .row .nav-link .contact-link {
-  font-size: 30px;
-  color: black;
-}
-.navbar .row .nav-link :hover {
-  color: #f5eb6d;
-}
-.navbar .row .nav {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar .row .nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  margin: 0;
-}
-.navbar .row .nav ul li {
-  padding: 15px;
-}
-.navbar .row .nav ul li a {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-.navbar .row .nav ul li a:active {
-  color: #f5eb6d;
-}
-.navbar .row .nav ul li a:hover {
-  color: #f5eb6d;
 }
 
 .footer {
@@ -162,14 +129,6 @@ a {
   background: url("../assets/bg_img.jpeg");
   background-size: contain;
 }
-.projects-about .project-title {
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
-  -webkit-text-orientation: upright;
-          text-orientation: upright;
-  float: left;
-  padding-top: 2em;
-}
 .projects-about .project-carousel {
   width: 50%;
   margin: auto;
@@ -180,20 +139,13 @@ a {
 }
 .projects-about .project-carousel .carousel .slide .project-gallery-card {
   position: relative;
+  cursor: pointer;
 }
 .projects-about .project-carousel .thumbs {
   padding-left: 0;
   text-align: center;
 }
 
-.about-section .about-title {
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
-  -webkit-text-orientation: upright;
-          text-orientation: upright;
-  float: left;
-  padding-top: 4em;
-}
 .about-section .about-content-box {
   width: 50%;
   border: 3px solid #f5eb6d;
@@ -212,14 +164,20 @@ a {
   width: 100%;
 }
 .hero-section .hero-content {
-  padding: 160px;
+  margin: 110px 0 0 0;
 }
 .hero-section .hero-content ul {
   list-style: none;
-  font-weight: 700;
   color: white;
 }
 
+@media (max-width: 900px) {
+  .about-section .about-content-box {
+    width: 90%;
+    border: 3px solid #f5eb6d;
+    background: #BE375F;
+  }
+}
 .project-detail {
   padding-top: 60px;
   background: #BE375F;
