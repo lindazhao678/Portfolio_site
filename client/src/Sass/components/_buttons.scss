@@ -6,7 +6,7 @@
   right: 5%;
   background-color: $primary-color;
   font-size: 16px;
-  border: 4px, solid, black;
+  border: 2px solid $button-hover-color;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
@@ -24,28 +24,26 @@
   bottom: 0%;
   right: 0%;
   width: 50%;
+  border-radius: 20px;
+  border: 2px solid $button-hover-color;
 }
 
 .demo-button {
-  @extend .more-button;
-  bottom: 0%;
+  @extend .source-button;  
   left: 0%;
-  width: 50%;
 }
 
 .nav-button {
   background-color: white;
   font-size: 24px;
-  border: none;
+  border: 2px solid $button-hover-color;
   padding: 2px 20px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 20px;
   text-align: center;
   color: black;
-  margin: 60px auto;
-
+  margin: 10px auto;
   &:hover {
-    color: $primary-color;
     background-color: $button-hover-color;
   }
 
@@ -54,6 +52,10 @@
     background-color: #cccccc;
     color: #666666;
     pointer-events: none;
+  }
+
+  .send-button{
+    @extend .nav-button;
   }
 }
 

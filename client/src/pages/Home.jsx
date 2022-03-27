@@ -3,7 +3,7 @@ import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
 import { useLocation } from "react-router-dom";
-import { FaArrowUp } from "react-icons/fa";
+import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 
 function Home(props) {
   const location = useLocation().pathname;
@@ -44,17 +44,21 @@ function Home(props) {
     <Fragment>
       <div className="hero-section">
         <div className="container row">
-          <div className="hero-content">      
-              <p className="text-warning h1">Hello!</p>
-              <br />
-              <p className="text-light h4">I'm Lijun Zhao,</p>
-              <p className="text-light h4">a web developer </p>
-              <p className="text-light h4">based in Melbourne.</p>
-              <br />
-              <p className="text-light h4">Welcome to my Website!</p>
+          <div className="hero-content">
+            <p className="text-warning h1">Hello!</p>
+            <br />
+            <p className="text-light h4">I'm Lijun Zhao,</p>
+            <p className="text-light h4">a web developer </p>
+            <p className="text-light h4">based in Melbourne.</p>
+            <br />
+            <p className="text-warning h4">Welcome to my Website!</p>
           </div>
         </div>
+        <div className="arrow bounce text-light">
+        <FaArrowDown />
       </div>
+      </div>
+
       <div className="projects-about">
         <Projects projectsRef={projectsRef} />
         <About aboutRef={aboutRef} />

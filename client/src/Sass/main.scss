@@ -1,9 +1,5 @@
-
-
-// base imports
 @use './base/base';
 
-// component imports
 @use './components/navbar';
 @use './components/footer';
 @use './components/buttons';
@@ -12,13 +8,10 @@
 @use './components/about';
 @use './components/hero';
 
-
-
-// layout imports
-
+@use './pages/detail';
 @use './layout/media';
 
-@use './pages/detail';
+
 
 
 

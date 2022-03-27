@@ -56,22 +56,23 @@ function ProjectDetail() {
 
       <div className="detail-content mt-5 text-light">
         <h1 className="detail-title text-center">ABOUT PROJECT</h1>
-        <div className="detail-info row mt-5 justify-content-md-center">
-          <div className="detail-brief col-3">
+        <div className="detail-info row mx-auto mt-5 justify-content-lg-center">
+          <div className="detail-brief col-12 col-lg-3">
             <h5>Project Description:</h5>
-            {project.brief}
+            <p>{project.brief}</p>
+            <hr className="d-lg-none"/>
           </div>
-          <div className="detail-tech col-3">
+          <div className="detail-tech col-12 col-lg-3">
             <h5>Project technologies:</h5>
-            {project.tech}
+            <p>{project.tech}</p>
           </div>
         </div>
       </div>
 
-      <div className="nav-project row justify-content-between">
-        <button className="nav-button col-2" onClick={handlePrev} disabled={prevDisabled}>Prev Project</button>
-        <button className="nav-button col-2" onClick={handleNext}
-        disabled={nextDisabled}>Next Project</button>
+      <div className="nav-project mx-auto pb-5 row justify-content-md-around">
+        <button className="nav-button col-6 col-md-3" onClick={handlePrev} disabled={prevDisabled}>{'<<'} Prev Project</button>
+        <button className="nav-button col-6 col-md-3" onClick={handleNext}
+        disabled={nextDisabled}>Next Project {'>>'}</button>
       </div>
 
     </div>

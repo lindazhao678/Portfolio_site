@@ -4,14 +4,13 @@ import logo from "../assets/logo.png";
 function About({aboutRef}) {
   return (
     <div className="about-section clearfix py-5" ref={aboutRef}>
-      <h2 className="title-v float-start d-none d-md-block">ABOUT</h2>
-      <h1 className="text-center text-light d-md-none">ABOUT</h1>
-
+      <h2 className="title-v float-start d-none d-lg-block">ABOUT</h2>
+      <h1 className="text-center text-light d-lg-none">ABOUT</h1>
 
         <div className="d-flex justify-content-center">
           <div className="about-content">
-            <p className="about-text text-light p-4">
-              <img src={logo} className="float-start pe-3" alt="selfie" />
+            <p className="about-text clearfix text-light p-4">
+              <img src={logo} className="selfie float-start pe-3" alt="selfie" />
               Lorem occaecat id magna ad. Qui reprehenderit duis amet sint
               officia. Et qui pariatur nostrud laboris aliqua velit consequat
               eiusmod incididunt minim magna esse. Magna proident aliqua enim
@@ -25,7 +24,7 @@ function About({aboutRef}) {
 
         <div className="about-skills py-5">
           <h2 className="text-center pt-5 text-light">MY SKILLS</h2>
-          <div className="skill-card row text-center pb-5 container">
+          <div className="skill-card row text-center pb-5 container justify-content-around mx-auto">
             <div className="col p-3">
               <div className="badge rounded-pill">HTML</div>
             </div>

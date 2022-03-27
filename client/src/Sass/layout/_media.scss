@@ -2,9 +2,28 @@
 
 @media (max-width: $lg) {
   .about-section {
-    .about-content{
+    .about-content {
       width: 90%;
-
     }
   }
 }
+
+@media (max-width: $sm) {
+  .selfie.float-start {
+    display: block;
+    float: none !important;
+    margin: auto;
+  }
+
+  .more-button {
+    display: none;
+  }
+
+  .project-detail .project-detail-card {
+    width: 100%;
+    border: none;
+  }
+}
+
+
+
