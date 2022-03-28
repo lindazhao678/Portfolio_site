@@ -8,9 +8,12 @@
 
   .hero-content {
     margin: 110px 0;
+    .warning-text{
+      color: $button-hover-color,
+    }
   }
 
-  .arrow {
+  .down-arrow {
     text-align: center;
   }
   .bounce {

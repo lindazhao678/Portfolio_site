@@ -44,7 +44,7 @@ a {
 
 .footer {
   background-color: #ed8554;
-  height: 80px;
+  height: 70px;
   text-align: center;
 }
 .footer .footer-text, .footer .footer-logo {
@@ -72,6 +72,7 @@ a {
 .more-button:hover, .source-button:hover, .demo-button:hover {
   color: #be375f;
   background-color: #f5eb6d;
+  border: 2px solid #be375f;
 }
 
 .source-button, .demo-button {
@@ -86,10 +87,10 @@ a {
   left: 0%;
 }
 
-.nav-button, .nav-button .send-button {
-  background-color: white;
+.nav-button, .go-to-homepage-button, .send-button {
+  background-color: #f5eb6d;
   font-size: 24px;
-  border: 2px solid #f5eb6d;
+  border: 2px solid black;
   padding: 2px 20px;
   cursor: pointer;
   border-radius: 20px;
@@ -97,15 +98,16 @@ a {
   color: black;
   margin: 10px auto;
 }
-.nav-button:hover, .nav-button .send-button:hover {
-  background-color: #f5eb6d;
+.nav-button:hover, .go-to-homepage-button:hover, .send-button:hover {
+  background-color: white;
 }
-.nav-button:disabled, .nav-button .send-button:disabled {
+.nav-button:disabled, .go-to-homepage-button:disabled, .send-button:disabled {
   border: 1px solid #999999;
   background-color: #cccccc;
   color: #666666;
   pointer-events: none;
 }
+
 .go-to-top-button {
   position: fixed;
   bottom: 20px;
@@ -128,7 +130,7 @@ a {
 }
 .contact-section .contact-link {
   color: black;
-  font-size: 150px;
+  font-size: 120px;
 }
 .contact-section .contact-link :hover {
   color: #f5eb6d;
@@ -164,6 +166,10 @@ a {
   font-size: 1.6em;
   font-weight: 300;
 }
+.about-section .badge:hover {
+  color: #be375f;
+  background-color: #f5eb6d;
+}
 
 .hero-section {
   background: url("../assets/hero_img.jpeg") center center;
@@ -174,7 +180,10 @@ a {
 .hero-section .hero-content {
   margin: 110px 0;
 }
-.hero-section .arrow {
+.hero-section .hero-content .warning-text {
+  color: #f5eb6d;
+}
+.hero-section .down-arrow {
   text-align: center;
 }
 .hero-section .bounce {

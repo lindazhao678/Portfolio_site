@@ -22,10 +22,10 @@ function Home(props) {
       }
     }
     window.addEventListener("scroll", function () {
-      if (
+      if ( goToTopBtnRef.current && (
         document.body.scrollTop > 100 ||
         document.documentElement.scrollTop > 100
-      ) {
+        )) {
         goToTopBtnRef.current.style.display = "block";
       } else {
         goToTopBtnRef.current.style.display = "none";
@@ -45,16 +45,16 @@ function Home(props) {
       <div className="hero-section">
         <div className="container row">
           <div className="hero-content">
-            <p className="text-warning h1">Hello!</p>
+            <h1 className="warning-text">Hello!</h1>
             <br />
-            <p className="text-light h4">I'm Lijun Zhao,</p>
-            <p className="text-light h4">a web developer </p>
-            <p className="text-light h4">based in Melbourne.</p>
+            <h4 className="text-light">I'm Lijun Zhao,</h4>
+            <h4 className="text-light">a web developer </h4>
+            <h4 className="text-light">based in Melbourne.</h4>
             <br />
-            <p className="text-warning h4">Welcome to my Website!</p>
+            <h4 className="warning-text">Welcome to my Website!</h4>
           </div>
         </div>
-        <div className="arrow bounce text-light">
+        <div className="down-arrow bounce text-light">
         <FaArrowDown />
       </div>
       </div>

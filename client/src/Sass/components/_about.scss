@@ -8,10 +8,14 @@
     background: $primary-color;
   }
   
-  .badge {
+  .badge{
     background: $primary-color;
     font-size: 1.6em;
     font-weight: 300;
+    &:hover{
+      color: #be375f;
+      background-color: $button-hover-color;
+    }
   }
 } 
   

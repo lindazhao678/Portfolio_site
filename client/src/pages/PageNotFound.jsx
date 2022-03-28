@@ -1,14 +1,26 @@
-import React from 'react'
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-function pageNotFound() {
+function PageNotFound() {
+
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate('/');
+  }
   return (
-    <div className="p-5 m-t5 row">
-      <div className="d-inline col-12">
-        <h4 className="mt-3">404 Page Not Found</h4>
-        <p className="text-muted">Maybe it's time to get off the internet!</p>
+    <div className="m-5 row">
+      <div>
+        <h1 className="m-5">404</h1>
+        <p className="text-muted m-5">
+          OOPS, THE PAGE YOU ARE LOOKING FOR CAN'T BE FOUND!
+        </p>
+        <button className="go-to-homepage-button m-5" onClick={handleClick}>
+          Go to homepage {">>"}
+        </button>
       </div>
     </div>
-  )
+  );
 }
 
-export default pageNotFound
+export default PageNotFound;
