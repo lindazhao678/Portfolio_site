@@ -9,7 +9,7 @@
 }
 
 @media (max-width: $sm) {
-  .selfie.float-start {
+  .about-section .about-content .selfie {
     display: block;
     float: none !important;
     margin: auto;
@@ -24,6 +24,3 @@
     border: none;
   }
 }
-
-
-

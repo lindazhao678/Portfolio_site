@@ -161,6 +161,9 @@ a {
   border: 2px solid #f5eb6d;
   background: #be375f;
 }
+.about-section .about-content .selfie {
+  margin-right: 1rem;
+}
 .about-section .badge {
   background: #be375f;
   font-size: 1.6em;
@@ -235,7 +238,7 @@ a {
   }
 }
 @media (max-width: 576px) {
-  .selfie.float-start {
+  .about-section .about-content .selfie {
     display: block;
     float: none !important;
     margin: auto;

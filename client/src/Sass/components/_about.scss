@@ -1,21 +1,22 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
-.about-section{
-
-  .about-content{
+.about-section {
+  .about-content {
     width: 40%;
     border: 2px solid $button-hover-color;
     background: $primary-color;
+    .selfie {
+      margin-right: 1rem;
+    }
   }
-  
-  .badge{
+
+  .badge {
     background: $primary-color;
     font-size: 1.6em;
     font-weight: 300;
-    &:hover{
+    &:hover {
       color: #be375f;
       background-color: $button-hover-color;
     }
   }
-} 
-  
+}

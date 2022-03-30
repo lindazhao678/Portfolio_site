@@ -102,15 +102,12 @@ function Contact({ contactRef }) {
       <div className="container pb-3">
         <h4 className="text-light text-center px-5 pt-5">You can find me there:</h4>
         <div className="contact-icon d-flex text-center justify-content-center">
-          <Link to="#" className="contact-link">
+          <a href="https://www.linkedin.com/in/linda-zhao-930b47124/" className="contact-link">
             <FaLinkedin className="col-4 contact-link-icon" />
-          </Link>
-          <Link to="#" className="contact-link">
+          </a>
+          <a href="https://github.com/lindazhao678" className="contact-link">
             <FaGithub className="col-4 contact-link-icon" />
-          </Link>
-          <Link to="#" className="contact-link">
-            <FaTwitterSquare className="col-4 contact-link-icon" />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

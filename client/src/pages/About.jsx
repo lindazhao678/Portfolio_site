@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/logo.png";
 import { useNavigate } from "react-router-dom";
 import { getAllProjects }from "../services/projectData";
+import selfie from "../assets/selfie.jpeg";
 
 function About({aboutRef}) {
 
@@ -20,7 +21,7 @@ function About({aboutRef}) {
         <div className="d-flex justify-content-center">
           <div className="about-content">
             <p className="about-text clearfix text-light p-4">
-              <img src={logo} className="selfie float-start pe-3 rounded-circle" alt="selfie" />
+              <img src={selfie} className="selfie float-start rounded-circle" alt="selfie" />
               Lorem occaecat id magna ad. Qui reprehenderit duis amet sint
               officia. Et qui pariatur nostrud laboris aliqua velit consequat
               eiusmod incididunt minim magna esse. Magna proident aliqua enim
