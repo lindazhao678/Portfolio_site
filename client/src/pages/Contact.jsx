@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import Joi from "joi";
 import { joiResolver } from "@hookform/resolvers/joi";
@@ -9,7 +8,7 @@ import Form from "react-bootstrap/Form";
 
 import { useForm, Controller } from "react-hook-form";
 
-import { FaGithub, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Contact({ contactRef }) {
   const schema = Joi.object({
