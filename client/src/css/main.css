@@ -17,8 +17,7 @@ a {
 .title-v {
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
-  -webkit-text-orientation: upright;
-          text-orientation: upright;
+  text-orientation: upright;
   text-align: center;
   color: white;
 }
@@ -128,6 +127,9 @@ a {
 .contact-section {
   background-color: #be375f;
 }
+.contact-section .form {
+  width: 60%;
+}
 .contact-section .contact-link {
   color: black;
   font-size: 120px;
@@ -141,11 +143,8 @@ a {
   background-size: contain;
 }
 .projects-about .project-carousel {
-  width: 50%;
+  width: 60%;
   margin: auto;
-}
-.projects-about .project-carousel .carousel .slide {
-  border: 3px solid #f5eb6d;
 }
 .projects-about .project-carousel .carousel .slide .project-gallery-card {
   position: relative;
@@ -157,8 +156,7 @@ a {
 }
 
 .about-section .about-content {
-  width: 40%;
-  border: 2px solid #f5eb6d;
+  width: 60%;
   background: #be375f;
 }
 .about-section .about-content .selfie {
@@ -233,15 +231,33 @@ a {
 }
 
 @media (max-width: 992px) {
+  .projects-about .project-carousel {
+    width: 90%;
+  }
+
   .about-section .about-content {
     width: 90%;
   }
+  .about-section .badge {
+    font-size: 1.2em;
+  }
 }
 @media (max-width: 576px) {
+  .projects-about .project-carousel {
+    width: 100%;
+  }
+
+  .about-section .about-content {
+    width: 100%;
+    border: none;
+  }
   .about-section .about-content .selfie {
     display: block;
     float: none !important;
     margin: auto;
+  }
+  .about-section .badge {
+    font-size: 0.8em;
   }
 
   .more-button {
@@ -251,5 +267,9 @@ a {
   .project-detail .project-detail-card {
     width: 100%;
     border: none;
+  }
+
+  .contact-section .form {
+    width: 90%;
   }
 }

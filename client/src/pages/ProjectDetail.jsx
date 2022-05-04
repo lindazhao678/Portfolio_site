@@ -57,14 +57,16 @@ function ProjectDetail() {
       <div className="detail-content mt-5 text-light">
         <h1 className="detail-title text-center">ABOUT PROJECT</h1>
         <div className="detail-info row mx-auto mt-5 justify-content-lg-center">
-          <div className="detail-brief col-12 col-lg-3">
+          <div className="detail-brief col-12 col-lg-4">
             <h5>Project Description:</h5>
             <p>{project.brief}</p>
             <hr className="d-lg-none"/>
           </div>
-          <div className="detail-tech col-12 col-lg-3">
+          <div className="detail-tech col-12 col-lg-4">
             <h5>Project technologies:</h5>
-            <p>{project.tech}</p>
+            <ul>
+              {project.tech.map(i => (<li>{i}</li>))}
+            </ul>
           </div>
         </div>
       </div>

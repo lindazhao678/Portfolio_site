@@ -22,13 +22,15 @@ function Home(props) {
       }
     }
     window.addEventListener("scroll", function () {
-      if ( goToTopBtnRef.current && (
-        document.body.scrollTop > 100 ||
-        document.documentElement.scrollTop > 100
-        )) {
-        goToTopBtnRef.current.style.display = "block";
-      } else {
-        goToTopBtnRef.current.style.display = "none";
+      if (goToTopBtnRef.current) {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          goToTopBtnRef.current.style.display = "block";
+        } else {
+          goToTopBtnRef.current.style.display = "none";
+        }
       }
     });
   }, [location]);
@@ -55,8 +57,8 @@ function Home(props) {
           </div>
         </div>
         <div className="down-arrow bounce text-light">
-        <FaArrowDown />
-      </div>
+          <FaArrowDown />
+        </div>
       </div>
 
       <div className="projects-about">

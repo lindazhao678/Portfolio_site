@@ -21,13 +21,9 @@ function About({aboutRef}) {
           <div className="about-content">
             <p className="about-text clearfix text-light p-4">
               <img src={selfie} className="selfie float-start rounded-circle" alt="selfie" />
-              Lorem occaecat id magna ad. Qui reprehenderit duis amet sint
-              officia. Et qui pariatur nostrud laboris aliqua velit consequat
-              eiusmod incididunt minim magna esse. Magna proident aliqua enim
-              reprehenderit quis sunt laboris. Irure in exercitation id elit
-              commodo non ad id. Et veniam excepteur non officia fugiat aliqua
-              sint culpa tempor adipisicing Lorem ullamco excepteur. Voluptate
-              nulla in sunt consectetur magna nulla quis amet Lorem amet officia.Sit consequat reprehenderit labore et ut et. Velit enim ut eu irure dolore anim officia nisi non sint ullamco. Commodo et Lorem deserunt est laborum.
+              I've been obsessed with coding.
+              I started self-learning software development in 2019 when I first tried to build my own e-commerce website. From that time, I found myself deeply passionate on software development. From design to build, from development to production, I exprienced great joy and competence. I will finish my web application development diploma in the year 2022, but I will not stop learning, I enjoy to explore and pick up new frameworks and tools. That's me who will not waste any opportunity to keep learning and exploring the software development.
+
             </p>
           </div>
         </div>
@@ -39,28 +35,43 @@ function About({aboutRef}) {
               <button className="badge rounded-pill" onClick={()=>handleSkill('html')}>HTML</button>
             </div>
             <div className="col p-3">
-              <button className="badge rounded-pill" onClick={()=>handleSkill('sass')}>CSS/SASS</button>
-            </div>
-            <div className="col p-3">
               <button className="badge rounded-pill" onClick={()=>handleSkill('javascript')}>JavaScript</button>
             </div>
             <div className="col p-3">
               <button className="badge rounded-pill" onClick={()=>handleSkill('typescript')}>TypeScript</button>
             </div>
             <div className="col p-3">
-              <button className="badge rounded-pill" onClick={()=>handleSkill('figma')}>Figma</button>
+              <button className="badge rounded-pill" onClick={()=>handleSkill('react')}>ReactJS</button>
             </div>
             <div className="col p-3">
-              <button className="badge rounded-pill" onClick={()=>handleSkill('react')}>React JS</button>
+              <button className="badge rounded-pill" onClick={()=>handleSkill('sass')}>CSS/SASS</button>
             </div>
             <div className="col p-3">
               <button className="badge rounded-pill" onClick={()=>handleSkill('bootstrap')}>Bootstrap</button>
             </div>
             <div className="col p-3">
+              <button className="badge rounded-pill" onClick={()=>handleSkill('tailwindcss')}>TailwindCSS</button>
+            </div>
+            <div className="col p-3">
+              <button className="badge rounded-pill" onClick={()=>handleSkill('figma')}>Figma</button>
+            </div>
+            <div className="col p-3">
+              <button className="badge rounded-pill" onClick={()=>handleSkill('milanote')}>Milanote</button>
+            </div>
+            <div className="col p-3">
               <button className="badge rounded-pill" onClick={()=>handleSkill('photoshop')}>Photoshop</button>
             </div>
             <div className="col p-3">
-              <button className="badge rounded-pill" onClick={()=>handleSkill('node')}>Node JS</button>
+              <button className="badge rounded-pill" onClick={()=>handleSkill('nodejs')}>NodeJS</button>
+            </div>
+            <div className="col p-3">
+              <button className="badge rounded-pill" onClick={()=>handleSkill('express')}>Express</button>
+            </div>
+            <div className="col p-3">
+              <button className="badge rounded-pill" onClick={()=>handleSkill('mongodb')}>MongoDB</button>
+            </div>
+            <div className="col p-3">
+              <button className="badge rounded-pill" onClick={()=>handleSkill('nextjs')}>NextJS</button>
             </div>
           </div>
         </div>
