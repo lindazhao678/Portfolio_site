@@ -2,12 +2,12 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 function PageNotFound() {
-
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate('/');
+    navigate("/");
   }
+
   return (
     <div className="m-5 row">
       <div>

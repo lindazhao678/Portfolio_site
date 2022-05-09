@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
 @media (max-width: $lg) {
+
   .projects-about {
     .project-carousel {
       width: 90%;
@@ -12,6 +13,13 @@
     }
     .badge {
       font-size: 1.2em;
+    }
+  }
+
+  .project-detail {
+    .nav-button {
+      font-size: 0.5rem;
+      padding: 10px 20px;
     }
   }
 }
@@ -46,9 +54,17 @@
     width: 100%;
     border: none;
   }
+
   .contact-section {
-    .form {
-      width: 90%;
+    .contact-link-icon {
+      font-size: 1.5rem;
+
+      .contact-text {
+        font-size: 0.5rem;
+      }
+    }
+    .contact-git-icon {
+      padding-left: 3rem;
     }
   }
 }

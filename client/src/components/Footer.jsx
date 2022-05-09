@@ -9,7 +9,9 @@ function Footer() {
   return (
     <div className="footer">
       <img src={logo} className="footer-logo" alt="logo" />
-      <span className="footer-text">Copyright &copy; {getCurrentYear()} Lijun Zhao</span>
+      <span className="footer-text text-light">
+        Copyright &copy; {getCurrentYear()} Lijun Zhao
+      </span>
     </div>
   );
 }

@@ -3,12 +3,9 @@
 .contact-section {
   background-color: $primary-color;
 
-  .form {
-    width: 60%;
-  }
-  .contact-link {
+  .contact-link-icon {
     color: black;
-    font-size: 120px;
+    font-size: 2rem;
 
     :hover {
       color: $button-hover-color;

@@ -11,6 +11,7 @@ function Home(props) {
   const contactRef = useRef(null);
   const projectsRef = useRef(null);
   const goToTopBtnRef = useRef(null);
+
   useEffect(() => {
     if (location) {
       if (location === "/projects") {
@@ -42,6 +43,7 @@ function Home(props) {
       behavior: "smooth",
     });
   }
+  
   return (
     <Fragment>
       <div className="hero-section">
@@ -69,7 +71,7 @@ function Home(props) {
       <button
         onClick={() => scroll(0)}
         ref={goToTopBtnRef}
-        className="go-to-top-button"
+        className="go-to-top-button d-none d-sm-block"
       >
         <FaArrowUp />
       </button>

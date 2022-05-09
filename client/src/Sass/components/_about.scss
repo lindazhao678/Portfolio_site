@@ -4,6 +4,11 @@
   .about-content {
     width: 60%; 
     background: $primary-color;
+
+    .about-text {
+      text-align: justify;
+    }
+    
     .selfie {
       margin-right: 1rem;
     }

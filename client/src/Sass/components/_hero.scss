@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 .hero-section {
-  background: url("../assets/hero_img.jpeg") center center;
+  background: url("../../assets/hero_img.jpeg") center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -10,31 +10,6 @@
     margin: 110px 0;
     .warning-text{
       color: $button-hover-color,
-    }
-  }
-
-  .down-arrow {
-    text-align: center;
-  }
-  .bounce {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
-  }
-
-  @keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-30px);
-    }
-    60% {
-      transform: translateY(-15px);
     }
   }
 }
