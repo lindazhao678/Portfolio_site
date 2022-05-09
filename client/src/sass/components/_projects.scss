@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.projects-about {
+  background: url("../../assets/bg_img.jpeg");
+  background-size: contain;
+
+  .project-carousel {
+    width: 60%;
+    margin: auto;
+
+    .carousel .slide {
+      .project-gallery-card {
+        position: relative;
+        cursor: pointer;
+      }
+    }
+
+    .thumbs {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+}
