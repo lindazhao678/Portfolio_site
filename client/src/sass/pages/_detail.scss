@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+.project-detail {
+  padding-top: 60px;
+  background: $background-color;
+
+  .project-detail-card {
+    position: relative;
+    width: 50%;
+    margin: auto;
+
+    .project-detail-image {
+      width: 100%;
+    }
+  }
+
+  .detail-content {
+    padding-bottom: 2rem;
+
+    .project-brief {
+      color: #a3a3a3; 
+      text-align: justify;
+    }
+
+    .project-tech {
+      color: #a3a3a3; 
+      text-align: justify;
+    }
+  }
+}
