@@ -12,15 +12,15 @@ function Contact({ contactRef }) {
     <div className="contact-section clearfix" ref={contactRef}>
       <h1 className="text-center text-light py-5">CONTACT</h1>
       <div className="d-flex row pb-5">
-        <h2 className="contact-text text-light text-center col-12">
+        <h3 className="contact-text text-light text-center col-12">
           If you like my site or my works
-        </h2>
-        <h2 className="contact-text text-light text-center col-12">
+        </h3>
+        <h3 className="contact-text text-light text-center col-12">
           Or if you have any questions
-        </h2>
-        <h2 className="contact-text text-light text-center col-12">
+        </h3>
+        <h3 className="contact-text text-light text-center col-12">
           Don't hesitate to reach out!
-        </h2>
+        </h3>
         <div className="text-light text-center">
           <FaRocket />
           <FaRocket />

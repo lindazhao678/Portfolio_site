@@ -71,7 +71,7 @@ function Home(props) {
       <button
         onClick={() => scroll(0)}
         ref={goToTopBtnRef}
-        className="go-to-top-button d-none d-sm-block"
+        className="go-to-top-button"
       >
         <FaArrowUp />
       </button>

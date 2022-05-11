@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 
 function Header() {
   return (
-    <Navbar className="top-nav" expand="md">
+    <Navbar className="top-nav" expand="lg">
       <Container fluid>
         <Navbar.Brand href="/">
           <img className="nav-logo" src={logo} alt="logo" />

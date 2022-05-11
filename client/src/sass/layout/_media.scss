@@ -12,19 +12,19 @@
       width: 90%;
     }
     .badge {
-      font-size: 1.2em;
+      font-size: 1.2rem;
     }
   }
 
   .project-detail {
     .nav-button {
-      font-size: 0.5rem;
-      padding: 10px 20px;
+      font-size: 0.8rem;
     }
   }
 }
 
 @media (max-width: $sm) {
+
   .projects-about {
     .project-carousel {
       width: 100%;
@@ -34,15 +34,19 @@
     .about-content {
       width: 100%;
       border: none;
+      .about-text {
+        font-size: 18px;
+      }
       .selfie {
         display: block;
         float: none !important;
         margin: auto;
+        padding-bottom: 24px;
       }
     }
 
     .badge {
-      font-size: 0.8em;
+      font-size: 0.8rem;
     }
   }
 
