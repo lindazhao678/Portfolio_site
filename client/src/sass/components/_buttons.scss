@@ -5,11 +5,11 @@
   bottom: 8%;
   right: 5%;
   background-color: $primary-color;
-  font-size: 16px;
+  font-size: 1rem;
   border: 2px solid $button-hover-color;
-  padding: 10px 20px;
+  padding: 2px 20px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 20px;
   text-align: center;
   color: white;
 
@@ -25,8 +25,6 @@
   bottom: 0%;
   right: 0%;
   width: 50%;
-  border-radius: 20px;
-  border: 2px solid $button-hover-color;
 }
 
 .demo-button {

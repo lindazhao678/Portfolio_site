@@ -6,8 +6,12 @@
   background-size: cover;
   width: 100%;
 
+  .overlay {
+    background-color: rgba(0, 0, 15, 0.7);
+  }
+
   .hero-content {
-    padding: 4rem 1rem;
+    padding: 7rem 0rem 2rem 2rem;
     .warning-text{
       color: $button-hover-color,
     }

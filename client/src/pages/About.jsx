@@ -27,7 +27,7 @@ function About({ aboutRef }) {
               alt="selfie"
             />
             I've been obsessed with coding. I started self-learning software
-            development in 2019 when I first tried to build my own e-commerce
+            development in 2020 when I first tried to build my own e-commerce
             website. From that time, I found myself deeply passionate on
             software development. From design to build, from development to
             production, I exprienced great joy and competence. I will finish my

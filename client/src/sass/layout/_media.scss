@@ -54,18 +54,25 @@
     display: none;
   }
 
-  .project-detail .project-detail-card {
-    width: 100%;
-    border: none;
+  .project-detail {
+    .project-detail-card {
+      width: 100%;
+      border: none;
+      .demo-button .source-button {
+        padding: 2px 20px;
+      }
+    }
+    .detail-brief {
+      font-size: 18px;
+    }
+    .project-tech {
+      font-size: 18px;
+    }
   }
 
   .contact-section {
-    .contact-link-icon {
-      font-size: 1.5rem;
-
-      .contact-text {
-        font-size: 0.5rem;
-      }
+    .contact-link-icon .contact-text {
+      font-size: 1.5rem;  
     }
     .contact-git-icon {
       padding-left: 3rem;

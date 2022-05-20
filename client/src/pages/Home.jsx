@@ -47,6 +47,8 @@ function Home(props) {
   return (
     <Fragment>
       <div className="hero-section">
+        <div className="overlay">
+
         <div className="container row">
           <div className="hero-content">
             <h1 className="warning-text">Hello!</h1>
@@ -60,6 +62,8 @@ function Home(props) {
         </div>
         <div className="down-arrow bounce text-light">
           <FaArrowDown />
+        </div>
+
         </div>
       </div>
 
