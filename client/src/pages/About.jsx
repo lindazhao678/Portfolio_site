@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { getAllProjects } from "../services/projectData";
-import selfie from "../assets/selfie.jpeg";
+import selfie from "../assets/selfie.avif";
 import { getAllSkills } from "../services/skillData";
 
 function About({ aboutRef }) {

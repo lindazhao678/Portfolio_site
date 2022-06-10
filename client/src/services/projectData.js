@@ -1,7 +1,7 @@
-import projectImg1 from "../assets/project_1.jpg";
-import projectImg2 from "../assets/project_2.jpg";
-import projectImg3 from "../assets/project_3.jpg";
-import projectImg4 from "../assets/project_4.jpg";
+import projectImg1 from "../assets/project_1.avif";
+import projectImg2 from "../assets/project_2.avif";
+import projectImg3 from "../assets/project_3.avif";
+import projectImg4 from "../assets/project_4.avif";
 
 const data = [
   {
