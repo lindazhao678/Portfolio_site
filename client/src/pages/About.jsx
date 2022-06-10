@@ -17,10 +17,10 @@ function About({ aboutRef }) {
   return (
     <div className="about-section clearfix py-5" ref={aboutRef}>
       <h2 className="title-v float-start d-none d-lg-block">ABOUT</h2>
-      <h1 className="text-center text-light d-lg-none">ABOUT</h1>
+      <h1 className="text-center d-lg-none">ABOUT</h1>
       <div className="d-flex justify-content-center">
         <div className="about-content">
-          <p className="about-text clearfix text-light p-4">
+          <p className="about-text clearfix p-4">
             <img
               src={selfie}
               className="selfie float-start rounded-circle"
@@ -41,7 +41,7 @@ function About({ aboutRef }) {
       </div>
 
       <div className="about-skills py-5">
-        <h2 className="text-center text-light">MY SKILLS</h2>
+        <h2 className="text-center">MY SKILLS</h2>
         <div className="skill-card row text-center container justify-content-around mx-auto">
           {getAllSkills().map((skill) => (
             <div className="col p-3">
