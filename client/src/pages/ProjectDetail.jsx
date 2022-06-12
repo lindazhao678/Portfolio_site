@@ -14,7 +14,7 @@ function ProjectDetail() {
     if (id === 1) {
       setPrevDisabled(true);
     } else setPrevDisabled(false);
-    if (id === 4) {
+    if (id === 5) {
       setNextDisabled(true);
     } else setNextDisabled(false);
   }, [id]);
@@ -27,13 +27,13 @@ function ProjectDetail() {
   }
 
   function handleNext() {
-    if (id < 4) {
+    if (id < 5) {
       const newProject = projectData(id + 1);
       navigate("/projectdetail", { state: newProject });
     }
   }
 
-  function viewDemo() {
+  function viewSite() {
     window.location = "https://www.google.com";
   }
 
@@ -46,8 +46,8 @@ function ProjectDetail() {
       <h1 className="text-light text-center pb-3">{project.name}</h1>
       <div className="project-detail-card">
         <img className="project-detail-image" src={project.img} alt="project" />
-        <button className="demo-button" onClick={viewDemo}>
-          View Demo {">>"}
+        <button className="site-button" onClick={viewSite}>
+          Live Site {">>"}
         </button>
         <button className="source-button" onClick={viewSource}>
           Source Code {">>"}
@@ -75,14 +75,14 @@ function ProjectDetail() {
 
       <div className="nav-project mx-auto pb-5 row justify-content-md-around">
         <button
-          className="nav-button col-6 col-md-3"
+          className="nav-button col-6 col-md-2"
           onClick={handlePrev}
           disabled={prevDisabled}
         >
           {"<<"} Prev Project
         </button>
         <button
-          className="nav-button col-6 col-md-3"
+          className="nav-button col-6 col-md-2"
           onClick={handleNext}
           disabled={nextDisabled}
         >
