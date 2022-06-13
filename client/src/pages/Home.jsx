@@ -63,11 +63,11 @@ function Home(props) {
         <div className="down-arrow bounce text-light">
           <FaArrowDown />
         </div>
-
         </div>
       </div>
 
       <div className="projects-about">
+        <div className="overlay">        
         <Projects projectsRef={projectsRef} />
         <About aboutRef={aboutRef} />
       </div>
@@ -79,6 +79,7 @@ function Home(props) {
       >
         <FaArrowUp />
       </button>
+      </div>
     </Fragment>
   );
 }

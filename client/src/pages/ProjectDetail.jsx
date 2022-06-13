@@ -14,7 +14,7 @@ function ProjectDetail() {
     if (id === 1) {
       setPrevDisabled(true);
     } else setPrevDisabled(false);
-    if (id === 5) {
+    if (id === 6) {
       setNextDisabled(true);
     } else setNextDisabled(false);
   }, [id]);
@@ -27,18 +27,18 @@ function ProjectDetail() {
   }
 
   function handleNext() {
-    if (id < 5) {
+    if (id < 6) {
       const newProject = projectData(id + 1);
       navigate("/projectdetail", { state: newProject });
     }
   }
 
   function viewSite() {
-    window.location = "https://www.google.com";
+    window.location = project.siteURL;
   }
 
   function viewSource() {
-    window.location = "https://www.google.com";
+    window.location = project.codeURL;
   }
 
   return (
