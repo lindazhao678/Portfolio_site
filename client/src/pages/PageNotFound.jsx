@@ -11,8 +11,8 @@ function PageNotFound() {
   return (
     <div className="m-5 row">
       <div>
-        <h1 className="m-5">404</h1>
-        <p className="text-muted m-5">
+        <h1 className="text-dark m-5">404</h1>
+        <p className="text-dark m-5">
           OOPS, THE PAGE YOU ARE LOOKING FOR CAN'T BE FOUND!
         </p>
         <button className="go-to-homepage-button m-5" onClick={handleClick}>

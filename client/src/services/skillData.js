@@ -12,7 +12,7 @@ const data = [
     {
         id: 3,
         name: "TypeScript",
-        handleSkillName: "typescriptl"
+        handleSkillName: "typescript"
     },
     {
         id: 4,

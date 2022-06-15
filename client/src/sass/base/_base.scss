@@ -6,7 +6,7 @@
 }
 
 body {
-  height: 100%;
+  min-height: 100vh;
   font-family: $font-stack;
   font-size: 1.125rem;
   line-height: 1.7;
