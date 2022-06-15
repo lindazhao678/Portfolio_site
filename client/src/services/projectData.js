@@ -11,7 +11,7 @@ const data = [
     name: "Recipe Search App",
     img: projectImg1,
     siteURL: "",
-    codeURL: "",
+    codeURL: "https://github.com/lindazhao678/Recipe_search_app",
     brief: "Recipe Search App is a react web application for user to search and view the food recipe. User can manage their favorite recipes in their favorite page. This web app provides basic search, pagination, and customization features.",
     tech: ["Build the frontend with React.", "Use SASS for the styling.", "Use React Hook Form combined with Joi library to build the contact form and validation system.", "Use React Router DOM to implement dynamic routing.", "Design wireframe and prototype with Figma."],
     skills: ['html', 'css', 'sass', 'javascript', 'figma', 'react', 'bootstrap', 'nodejs']
@@ -21,7 +21,7 @@ const data = [
     name: "Picture Search App",
     img: projectImg2,
     siteURL: "",
-    codeURL: "",
+    codeURL: "https://github.com/lindazhao678/pixel_bay",
     brief: "Pixel App is a react web appication for picture search. User can search pictures by tags. It's built with dynamic features, such as pagination, zoom in picture, and white/dark mode.",
     tech: ["Build the frontend with React.", "Use CSS and Bootstrap for the styling.", "Use Axios library to fatch data.", "Use React Router DOM to implement dynamic routing."],
     skills: ['html', 'css', 'javascript', 'react', 'bootstrap', 'nodejs']
@@ -30,10 +30,10 @@ const data = [
     id: 3,
     name: "Weather App",
     img: projectImg3,
-    siteURL: "",
-    codeURL: "",
-    brief: "Weather App is a react web appication for Melbourne weather forecast with friendly reminders based on the weather. Reminders include apply sunscream, wear jacket or Bring umbrella. For example, if the UV is higher than certain number, the app will remind the user to wear suncream.",
-    tech: ["Build the frontend with React.", "Use Bootstrap for the styling.", "Use Axios library to fatch data.", "Use React Router DOM to implement dynamic routing."],
+    siteURL: "https://melbourne-weather-app.herokuapp.com/",
+    codeURL: "https://github.com/lindazhao678/weather-app",
+    brief: "Weather App is a react web appication which hosted on Heroku. This app provides Melbourne weather forecasts with some friendly reminders based on the weather. Reminders include apply sunscream, wear jacket or Bring umbrella. For example, if the UV is higher than certain number, the app will remind the user to apply suncream.",
+    tech: ["Build the frontend with React.", "Use React Bootstrap for the styling.", "Use Axios library to fatch data.", "Use React Router DOM to implement dynamic routing."],
     skills: ['html', 'css', 'javascript', 'react', 'bootstrap', 'nodejs']
   },
   {
@@ -61,7 +61,7 @@ const data = [
     name: "Recipe Search APIs",
     img: projectImg6,
     siteURL: "",
-    codeURL: "",
+    codeURL: "https://github.com/lindazhao678/RecipesAPI",
     brief: "Recipe Search APIs are the RESTful APIs for the Recipe search App. They have two collections: users collection which is to manage the user, and recipes collection which is to manage the recipes. The users have two types: regular user and admin user. The admin user can create, update, delete and read any user's data. The regular user can create, update, delete and read its own user data. Recipe APIs include creating, deleting, updating, and reading recipe. And all of the Recipe APIs can only be consumed by its own user.",
     tech: ["Build the APIs with Express.", "Store the data in mongoDB database.", "Use mongoose schema to model the data.", "Use Joi labrary for validation.", "Use Json Web Token for authentication.", "Use bcrypt library for hashing and salting passwords.", "Use winston library to create the error logs."],
     skills: ['nodejs', 'express', 'mongodb', 'javascript']

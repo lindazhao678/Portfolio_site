@@ -1,6 +1,6 @@
 # About Project
 
-## live site: https://lijunzhao.com/
+## Live Site: https://lijunzhao.com/
 
 ## Project Description:
 
