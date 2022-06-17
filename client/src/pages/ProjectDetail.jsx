@@ -34,11 +34,11 @@ function ProjectDetail() {
   }
 
   function viewSite() {
-    window.location = project.siteURL;
+    window.open(project.siteURL);
   }
 
   function viewSource() {
-    window.location = project.codeURL;
+    window.open(project.codeURL);
   }
 
   return (

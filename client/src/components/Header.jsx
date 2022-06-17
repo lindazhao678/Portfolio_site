@@ -27,12 +27,16 @@ function Header() {
             </Navbar.Brand>
             <Navbar.Brand
               href="https://www.linkedin.com/in/linda-zhao-930b47124/"
+              target="_blank"
+              rel="noreferrer"
               className="nav-contact me-lg-5"
             >
               <FaLinkedin />
             </Navbar.Brand>
             <Navbar.Brand
               href="https://github.com/lindazhao678"
+              target="_blank"
+              rel="noreferrer"
               className="nav-contact"
             >
               <FaGithub />

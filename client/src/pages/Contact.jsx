@@ -46,12 +46,16 @@ function Contact({ contactRef }) {
         <div className="col-4">
           <a
             href="https://www.linkedin.com/in/linda-zhao-930b47124/"
+            target="_blank"
+            rel="noreferrer"
             className="contact-link-icon px-5"
           >
             <FaLinkedin />
           </a>
           <a
             href="https://github.com/lindazhao678"
+            target="_blank"
+            rel="noreferrer"
             className="contact-link-icon contact-git-icon"
           >
             <FaGithub />
