@@ -22,7 +22,7 @@ const data = [
     img: projectImg2,
     siteURL: "https://picture-search-app.herokuapp.com/",
     codeURL: "https://github.com/lindazhao678/pixel_bay",
-    brief: "Picture Search App is a react web appication for picture search. User can search pictures by tags. It's built with dynamic features, such as pagination, zoom in picture, and light/dark mode.",
+    brief: "Picture Search App is a react web application for picture search. User can search pictures by tags. It's built with dynamic features, such as pagination, zoom in picture, and light/dark mode.",
     tech: ["Build the frontend with React.", "Build the backend with Express.", "Use CSS and Bootstrap for the styling.", "Use Axios library to fatch data.", "Use React Router DOM to implement dynamic routing.", "Hoseted on Heroku."],
     skills: ['html', 'css', 'javascript', 'react', 'bootstrap']
   },

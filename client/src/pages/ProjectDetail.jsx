@@ -50,7 +50,7 @@ function ProjectDetail() {
           Live Site {">>"}
         </button>
         <button className="source-button" onClick={viewSource}>
-          Source Code {">>"}
+          Git Code {">>"}
         </button>
       </div>
 
@@ -75,14 +75,14 @@ function ProjectDetail() {
 
       <div className="nav-project mx-auto pb-5 row justify-content-md-around">
         <button
-          className="nav-button col-6 col-md-2"
+          className="nav-button col-6 col-sm-4 col-md-3 col-lg-2"
           onClick={handlePrev}
           disabled={prevDisabled}
         >
           {"<<"} Prev Project
         </button>
         <button
-          className="nav-button col-6 col-md-2"
+          className="nav-button col-6 col-sm-4 col-md-3 col-lg-2"
           onClick={handleNext}
           disabled={nextDisabled}
         >
