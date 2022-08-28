@@ -68,7 +68,28 @@ const data = [
         id: 14,
         name: "NextJS",
         handleSkillName: "nextjs"
+    },
+    {
+        id: 15,
+        name: "Restful API",
+        handleSkillName: "restfulapi"
+    },
+    {
+        id: 16,
+        name: "GraphQL",
+        handleSkillName: "graphql"
+    },
+    {
+        id: 17,
+        name: "MySQL",
+        handleSkillName: "mysql"
+    },
+    {
+        id: 18,
+        name: "Svelte",
+        handleSkillName: "svelte"
     }
+
 ];
 
 export function getAllSkills() {

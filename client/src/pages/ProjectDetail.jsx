@@ -65,9 +65,9 @@ function ProjectDetail() {
           <div className="detail-tech col-12 col-lg-4">
             <h5 className="e pb-3">Project technologies:</h5>
             <ul className="project-tech">
-              {project.tech.map((i) => (
+              {project.tech.map(i => 
                 <li>{i}</li>
-              ))}
+              )}
             </ul>
           </div>
         </div>

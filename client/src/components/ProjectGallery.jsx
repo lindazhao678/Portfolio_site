@@ -9,7 +9,7 @@ function ProjectGallery() {
   const navigate = useNavigate();
 
   function renderThumbs() {
-    const images = getAllProjects().map((item) => createImg(item.img));
+    const images = getAllProjects().map(item => createImg(item.img));
     return images;
   }
 
@@ -30,11 +30,11 @@ function ProjectGallery() {
       infiniteLoop={true}
       onClickItem={handleClick}
     >
-      {getAllProjects().map((item) => (
+      {getAllProjects().map(item => 
         <div key={item.toString()}>
           <ProjectGalleryCard project={item} />
         </div>
-      ))}
+      )}
     </Carousel>
   );
 }

@@ -26,16 +26,9 @@ function About({ aboutRef }) {
               className="selfie float-start rounded-circle"
               alt="selfie"
             />
-            I've been obsessed with coding. I started self-learning software
-            development in 2020 when I first tried to build my own e-commerce
-            website. From that time, I found myself deeply passionate on
-            software development. From design to build, from development to
-            production, I exprienced great joy and competence. I will finish my
-            web development diploma in the year 2022, but I will not stop
-            learning, I enjoy to explore and pick up new frameworks and tools.
-            Now I can plan, design, build, launch, and maintain a website myself.
-            That's me who will not waste any opportunity to keep learning and
-            exploring the software development.
+           I am passionate and obsessed with coding. I started self-learning software development in 2020 when I first tried to build my e-commerce website. From that time, I found it interesting. I felt great joy and competence to design, develop and finally make it online. 
+I'm currently studying for a diploma in information technology and will finish later in 2022.
+I enjoy exploring and picking up new frameworks and tools. It's a great feeling to plan, design, build, launch, and maintain a website myself.
           </p>
         </div>
       </div>
@@ -43,7 +36,7 @@ function About({ aboutRef }) {
       <div className="about-skills py-5">
         <h2 className="text-center">MY SKILLS</h2>
         <div className="skill-card row text-center container justify-content-around mx-auto">
-          {getAllSkills().map((skill) => (
+          {getAllSkills().map(skill => 
             <div className="col p-3">
               <button
                 className="badge rounded-pill"
@@ -52,7 +45,7 @@ function About({ aboutRef }) {
                 {skill.name}
               </button>
             </div>
-          ))}
+          )}
         </div>
       </div>
     </div>

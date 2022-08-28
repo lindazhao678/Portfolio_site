@@ -53,11 +53,11 @@ function Home(props) {
           <div className="hero-content">
             <h1 className="warning-text">Hello!</h1>
             <br />
-            <h4 className="text-light">I'm Lijun Zhao,</h4>
+            <h4 className="text-light">I'm Lijun,</h4>
             <h4 className="text-light">a web developer </h4>
             <h4 className="text-light">based in Melbourne.</h4>
             <br />
-            <h4 className="warning-text">Welcome to my Website!</h4>
+            <h4 className="warning-text">Welcome to my website!</h4>
           </div>
         </div>
         <div className="down-arrow bounce text-light">
