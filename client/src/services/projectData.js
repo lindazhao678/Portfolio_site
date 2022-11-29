@@ -5,6 +5,7 @@ import projectImg4 from "../assets/project_4.avif";
 import projectImg5 from "../assets/project_5.avif";
 import projectImg6 from "../assets/project_6.avif";
 import projectImg7 from "../assets/project_7.avif";
+import projectImg8 from "../assets/project_8.avif";
 
 const data = [
   {
@@ -61,7 +62,7 @@ const data = [
     id: 6,
     name: "Recipe Search APIs",
     img: projectImg6,
-    siteURL: "https://recipe-search-site.vercel.app",
+    siteURL: "",
     codeURL: "https://github.com/lindazhao678/RecipesAPI",
     brief: "Recipe Search APIs are the RESTful APIs for the Recipe search App. They have two collections: users collection which is to manage the user, and recipes collection which is to manage the recipes. The users have two types: regular user and admin user. The admin user can create, update, delete and read any user's data. The regular user can create, update, delete and read its own user data. Recipe APIs include creating, deleting, updating, and reading recipe. And all of the Recipe APIs can only be consumed by its own user.",
     tech: ["Build the APIs with Express.", "Store the data in mongoDB database.", "Use mongoose schema to model the data.", "Use Joi labrary for validation.", "Use Json Web Token for authentication.", "Use bcrypt library for hashing and salting passwords.", "Use winston library to create the error logs."],
@@ -76,6 +77,16 @@ const data = [
     brief: "An online movies world DVDs shop built using React as the frontend, node and express as the backend, and Google Firestore as the database. Users can visit the movie gallery, which will be  retrieved from the external API. User can look up all our DVDs in store, the details of our DVDs, and search our DVDs in store. Users can also sign up and login. Admin user with login can add DVDs, edit DVDs, and delete DVDs.",
     tech: ["Build the frontend with React.", "Build the backend with Express.", "Build the APIs with Restful API.", "Store the data in Firebase database.", "Store the image files in firebase storage bucket.", "Use Joi labrary for validation.", "Use Json Web Token for authentication.", "Use bcrypt library for hashing and salting passwords.", "Use Typescript to constrain the data types."],
     skills: ['reactjs', 'typescript', 'restfulapi', 'firebase', 'nodejs', 'express', 'git', 'gcp', 'javascript']
+  },
+  {
+    id: 8,
+    name: "CDs Shop App",
+    img: projectImg8,
+    siteURL: "https://cds-shop-client.vercel.app/",
+    codeURL: "https://github.com/lindazhao678/cds-shop",
+    brief: "A CDs management system for the online shop admin to add, update, delete, view, and search CDs which are stored in MySQL. Using Svelte as the frontend, node and express as the backend, GraphQL API, and MySQL as the database. GraphQL query and mutation operations are used to perform CRUD operations on the data. Data are validated in both frontend and backend before storing to database.",
+    tech: ["Build the frontend with Svelte.", "Build the backend with Express.", "Build the APIs with GraphQL.", "Store the data in MySQL database.", "Use Joi labrary for validation.", "Use sveltestrap and bootstrap for responsiveness.", "Use DBeaver to manage the database."],
+    skills: ['svelte', 'graphql', 'mysql', 'nodejs', 'express', 'javascript']
   },
 ];
 

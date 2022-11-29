@@ -14,7 +14,7 @@ function ProjectDetail() {
     if (id === 1) {
       setPrevDisabled(true);
     } else setPrevDisabled(false);
-    if (id === 6) {
+    if (id === 8) {
       setNextDisabled(true);
     } else setNextDisabled(false);
   }, [id]);
@@ -27,7 +27,7 @@ function ProjectDetail() {
   }
 
   function handleNext() {
-    if (id < 6) {
+    if (id < 8) {
       const newProject = projectData(id + 1);
       navigate("/projectdetail", { state: newProject });
     }
