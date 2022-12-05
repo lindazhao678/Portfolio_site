@@ -62,7 +62,7 @@ const data = [
     id: 6,
     name: "Recipe Search APIs",
     img: projectImg6,
-    siteURL: "",
+    siteURL: "https://recipes-api.herokuapp.com/api/recipes",
     codeURL: "https://github.com/lindazhao678/RecipesAPI",
     brief: "Recipe Search APIs are the RESTful APIs for the Recipe search App. They have two collections: users collection which is to manage the user, and recipes collection which is to manage the recipes. The users have two types: regular user and admin user. The admin user can create, update, delete and read any user's data. The regular user can create, update, delete and read its own user data. Recipe APIs include creating, deleting, updating, and reading recipe. And all of the Recipe APIs can only be consumed by its own user.",
     tech: ["Build the APIs with Express.", "Store the data in mongoDB database.", "Use mongoose schema to model the data.", "Use Joi labrary for validation.", "Use Json Web Token for authentication.", "Use bcrypt library for hashing and salting passwords.", "Use winston library to create the error logs."],
