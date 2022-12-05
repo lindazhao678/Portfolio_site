@@ -20,23 +20,23 @@ const data = [
   },
   {
     id: 2,
-    name: "Picture Search App",
-    img: projectImg2,
-    siteURL: "https://picture-search-app.herokuapp.com/",
-    codeURL: "https://github.com/lindazhao678/pixel_bay",
-    brief: "Picture Search App is a react web application for picture search. User can search pictures by tags. It's built with dynamic features, such as pagination, zoom in picture, and light/dark mode.",
-    tech: ["Build the frontend with React.", "Build the backend with Express.", "Use CSS and Bootstrap for the styling.", "Use Axios library to fatch data.", "Use React Router DOM to implement dynamic routing.", "Hoseted on Heroku."],
-    skills: ['html', 'css', 'javascript', 'reactjs', 'bootstrap']
+    name: "FAANG Tracker App",
+    img: projectImg5,
+    siteURL: "https://faang-tracker-app.vercel.app/",
+    codeURL: "https://github.com/lindazhao678/FAANG-tracker-app",
+    brief: "FAANG Tracker is a news media application which was built with next and hosted on Vercel. It provides the live stock updates, the latest news, investment advice and resources of Facebook, Amazon, Apple, Netflix, and Google. The app design is responsive and mobile friendly. The goal of this web application is to help anyone who are interested or who have already invested at the five FAANG stocks to be timely advised and be able to make the right investment decisions.",
+    tech: ["Build the front-end with React.", "Build the server-side with next.", "Use SASS for the styling.", "Use pre-rendering methodology for fetching the data from the external API.", "Integrate Google Analytics into the deployed website.", "Design wireframe and prototype with Figma.","Hoseted on Vercel."],
+    skills: ['html', 'css', 'sass', 'javascript', 'figma', 'nextjs', 'reactjs']
   },
   {
     id: 3,
-    name: "Weather App",
-    img: projectImg3,
-    siteURL: "https://melbourne-weather-app.herokuapp.com",
-    codeURL: "https://github.com/lindazhao678/weather-app",
-    brief: "Weather App is a react web appication which hosted on Heroku. This app provides Melbourne weather forecasts with some friendly reminders based on the weather. Reminders include apply sunscream, wear jacket or Bring umbrella. For example, if the UV is higher than certain number, the app will remind the user to apply suncream.",
-    tech: ["Build the frontend with React.", "Build the backend with Express.", "Use React Bootstrap for the styling.", "Use Axios library to fatch data.", "Use React Router DOM to implement dynamic routing.", "Hoseted on Heroku."],
-    skills: ['html', 'css', 'javascript', 'reactjs', 'bootstrap']
+    name: "Movies World App",
+    img: projectImg7,
+    siteURL: "https://movies-world-client.vercel.app/",
+    codeURL: "https://github.com/lindazhao678/movies-world-app",
+    brief: "An online movies world DVDs shop built using React as the frontend, node and express as the backend, and Google Firestore as the database. Users can visit the movie gallery, which will be  retrieved from the external API. User can look up all our DVDs in store, the details of our DVDs, and search our DVDs in store. Users can also sign up and login. Admin user with login can add DVDs, edit DVDs, and delete DVDs.",
+    tech: ["Build the frontend with React.", "Build the backend with Express.", "Build the APIs with Restful API.", "Store the data in Firebase database.", "Store the image files in firebase storage bucket.", "Use Joi labrary for validation.", "Use Json Web Token for authentication.", "Use bcrypt library for hashing and salting passwords.", "Use Typescript to constrain the data types."],
+    skills: ['reactjs', 'typescript', 'restfulapi', 'firebase', 'nodejs', 'express', 'git', 'gcp', 'javascript']
   },
   {
     id: 4,
@@ -50,16 +50,6 @@ const data = [
   },
   {
     id: 5,
-    name: "FAANG Tracker App",
-    img: projectImg5,
-    siteURL: "https://faang-tracker-app.vercel.app/",
-    codeURL: "https://github.com/lindazhao678/FAANG-tracker-app",
-    brief: "FAANG Tracker is a news media application which was built with next and hosted on Vercel. It provides the live stock updates, the latest news, investment advice and resources of Facebook, Amazon, Apple, Netflix, and Google. The app design is responsive and mobile friendly. The goal of this web application is to help anyone who are interested or who have already invested at the five FAANG stocks to be timely advised and be able to make the right investment decisions.",
-    tech: ["Build the front-end with React.", "Build the server-side with next.", "Use SASS for the styling.", "Use pre-rendering methodology for fetching the data from the external API.", "Integrate Google Analytics into the deployed website.", "Design wireframe and prototype with Figma.","Hoseted on Vercel."],
-    skills: ['html', 'css', 'sass', 'javascript', 'figma', 'nextjs', 'reactjs']
-  },
-  {
-    id: 6,
     name: "Recipe Search APIs",
     img: projectImg6,
     siteURL: "https://recipes-api.herokuapp.com/api/recipes",
@@ -68,18 +58,9 @@ const data = [
     tech: ["Build the APIs with Express.", "Store the data in mongoDB database.", "Use mongoose schema to model the data.", "Use Joi labrary for validation.", "Use Json Web Token for authentication.", "Use bcrypt library for hashing and salting passwords.", "Use winston library to create the error logs."],
     skills: ['nodejs', 'express', 'restfulapi', 'mongodb', 'javascript', 'postman', 'docker']
   },
+  
   {
-    id: 7,
-    name: "Movies World App",
-    img: projectImg7,
-    siteURL: "https://movies-world-client.vercel.app/",
-    codeURL: "https://github.com/lindazhao678/movies-world-app",
-    brief: "An online movies world DVDs shop built using React as the frontend, node and express as the backend, and Google Firestore as the database. Users can visit the movie gallery, which will be  retrieved from the external API. User can look up all our DVDs in store, the details of our DVDs, and search our DVDs in store. Users can also sign up and login. Admin user with login can add DVDs, edit DVDs, and delete DVDs.",
-    tech: ["Build the frontend with React.", "Build the backend with Express.", "Build the APIs with Restful API.", "Store the data in Firebase database.", "Store the image files in firebase storage bucket.", "Use Joi labrary for validation.", "Use Json Web Token for authentication.", "Use bcrypt library for hashing and salting passwords.", "Use Typescript to constrain the data types."],
-    skills: ['reactjs', 'typescript', 'restfulapi', 'firebase', 'nodejs', 'express', 'git', 'gcp', 'javascript']
-  },
-  {
-    id: 8,
+    id: 6,
     name: "CDs Shop App",
     img: projectImg8,
     siteURL: "https://cds-shop-client.vercel.app/",
@@ -87,6 +68,26 @@ const data = [
     brief: "A CDs management system for the online shop admin to add, update, delete, view, and search CDs which are stored in MySQL. Using Svelte as the frontend, node and express as the backend, GraphQL API, and MySQL as the database. GraphQL query and mutation operations are used to perform CRUD operations on the data. Data are validated in both frontend and backend before storing to database.",
     tech: ["Build the frontend with Svelte.", "Build the backend with Express.", "Build the APIs with GraphQL.", "Store the data in MySQL database.", "Use Joi labrary for validation.", "Use sveltestrap and bootstrap for responsiveness.", "Use DBeaver to manage the database."],
     skills: ['svelte', 'graphql', 'mysql', 'nodejs', 'express', 'javascript']
+  },
+  {
+    id: 7,
+    name: "Weather App",
+    img: projectImg3,
+    siteURL: "https://melbourne-weather-app.herokuapp.com",
+    codeURL: "https://github.com/lindazhao678/weather-app",
+    brief: "Weather App is a react web appication which hosted on Heroku. This app provides Melbourne weather forecasts with some friendly reminders based on the weather. Reminders include apply sunscream, wear jacket or Bring umbrella. For example, if the UV is higher than certain number, the app will remind the user to apply suncream.",
+    tech: ["Build the frontend with React.", "Build the backend with Express.", "Use React Bootstrap for the styling.", "Use Axios library to fatch data.", "Use React Router DOM to implement dynamic routing.", "Hoseted on Heroku."],
+    skills: ['html', 'css', 'javascript', 'reactjs', 'bootstrap']
+  },
+  {
+    id: 8,
+    name: "Picture Search App",
+    img: projectImg2,
+    siteURL: "https://picture-search-app.herokuapp.com/",
+    codeURL: "https://github.com/lindazhao678/pixel_bay",
+    brief: "Picture Search App is a react web application for picture search. User can search pictures by tags. It's built with dynamic features, such as pagination, zoom in picture, and light/dark mode.",
+    tech: ["Build the frontend with React.", "Build the backend with Express.", "Use CSS and Bootstrap for the styling.", "Use Axios library to fatch data.", "Use React Router DOM to implement dynamic routing.", "Hoseted on Heroku."],
+    skills: ['html', 'css', 'javascript', 'reactjs', 'bootstrap']
   },
 ];
 
