@@ -26,9 +26,8 @@ function About({ aboutRef }) {
               className="selfie float-start rounded-circle"
               alt="selfie"
             />
-           I am passionate and obsessed with coding. I started self-learning software development in 2020 when I first tried to build my e-commerce website. From that time, I found it interesting. I felt great joy and competence to design, develop and finally make it online. 
-I'm currently studying for a diploma in information technology and will finish later in 2022.
-I enjoy exploring and picking up new frameworks and tools. It's a great feeling to plan, design, build, launch, and maintain a website myself.
+           I am passionate about coding. I started coding in 2020 when I first tried to build my cake website. Since then, I have found it interesting and have become super obsessed with it. I feel great joy and competence in planning, designing, developing, testing, and finally launching a website. I enjoy exploring and learning new frameworks and tools. <br/>
+           Overall, I am a dedicated and passionate web developer who is always striving to create responsive, user-friendly websites that are optimized for speed and search engine visibility to provide the best possible user experience. I am excited about the opportunity to work on new and challenging projects and to help bring the clients' ideas to life on the web.
           </p>
         </div>
       </div>
